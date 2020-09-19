@@ -1,3 +1,12 @@
+# Coursera Capstone Project
+## Car Collision Severity Forecast
+
+### Data
+The SDOT Collision data is a record collision data including details of each collision along with data on road conditions etc.. There are missing values in some columns and not all data is useful for the forecast, for example, whether or not the driver of a car was under the influence of alcohol might not be useful input for the model, although given the increased likelihood of alcohol consumption at certain times of day, week, month, year, it would be unwise to drop this column without at least a brief exploratory data analysis.
+
+The column headers and first five rows of the data set are shown below
+
+
 ```python
 collisions_df.columns
 
@@ -172,3 +181,6 @@ collisions_df.head()
 <p>5 rows × 38 columns</p>
 </div>
 
+
+
+An exploratory data analysis will be performed on the data to see which features might be most useful for the model, which can be dropped and which need further preparation before use. Folllowing this a number of machine learning algorithms will be used to model the collision risk and each algorithm evaluated and compared with the rest.
